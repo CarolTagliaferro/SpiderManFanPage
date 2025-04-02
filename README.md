@@ -1,8 +1,8 @@
-# Homem-Aranha FanPage
+# 🕸 Homem-Aranha FanPage 
 
 ## 📌 Sobre o Projeto
 
-Este projeto foi desenvolvido como parte da disciplina de Programação Web na faculdade. A proposta era criar uma página simples, com tema livre, utilizando apenas HTML e CSS. Escolhi como tema o Homem-Aranha, um dos heróis mais icônicos da cultura pop.
+Este projeto foi desenvolvido como parte da disciplina de Programação Web na faculdade. A proposta era criar uma página simples, com tema livre, utilizando apenas HTML e CSS. Escolhi como tema o Homem-Aranha, um dos meus hérois preferidos.
 
 O objetivo principal foi praticar a estruturação de páginas web e estilização com CSS, sem o uso de JavaScript para interatividade.
 
