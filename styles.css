@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #151517;
+    color: #fff9f9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* NavBar*/
+header {
+    background: #840D0A;
+    padding: 12px 20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #fff9f9;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: rgb(9, 9, 74);
+    transition: all ease-out 0.2s;
+}
+
+/* Footer */
+footer {
+    background: black;
+    padding: 15px;
+    margin-top: 20px;  
+}
+
+/* Banner Home */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 70vh;  
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/bannerhome.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(25%); 
+    z-index: -1;  
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1; 
+}
+
+/* Seções */
+.container {
+    padding: 50px;
+}
+
+h2 {
+    font-size: 48px;
+    color: #aa221f;
+}
+
+h3{
+    color: #8e1715;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h4{
+    font-size: 32px;
+    color: #8e1715;
+}
+
+h5{
+    color: #8e1715;
+    font-size: 32px;
+    margin-top: 30px;
+}
+
+h6{
+    font-size: 24px;
+}
+
+/*Sobre*/
+.sobre-section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #8e1715cf;
+    border-radius: 3%;
+}
+
+.sobre-section img{
+    width: 70%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.sobre-section div{
+    flex: 1;
+    margin-top: 20px;
+}
+
+/* Filmes */
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.grid img {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid img:hover {
+    transform: scale(1.1);
+}
+
+/*Curiosidades*/
+ol {
+    list-style-position: inside;
+    padding-left: 0; 
+}
+
+ol li {
+    text-align: left; 
+    margin: 15px 0; 
+}
+
+.curiosidades-section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: #8e1715d0;
+    border-radius: 3%;
+    padding: 20px;
+}
+
+.curiosidades-section div{
+    flex: 1;
+}
+
+.curiosidades-section img{
+    width: 60%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/*Ordem filmes*/
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: rgba(190, 89, 87, 0.062);
+    display: table;
+}
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #fff9f9;
+  }
+  
+  th {
+    background-color: #8e1715;
+  }
+
+/*Página personagens*/
+.personagens{
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.container-perso {
+    position: relative;
+    width: 30%;
+    max-width: 500px;
+}
+
+.image-perso {
+    display: block;
+    width: 90%; 
+    border-radius: 10%;
+    height: 500px;
+    object-fit: cover; 
+}
+
+.overlay-perso {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%; 
+    height: 100%; 
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #8e1715a9;
+    pointer-events: none; 
+    border-radius: 10%;
+}
+
+.container-perso:hover .overlay-perso {
+    opacity: 1;
+}
+
+.text-perso {
+    color: #fff9f9;
+    font-size: 27px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-perso p {
+    font-size: 15px;
+}
+
+/* Página contato */
+main {
+    flex: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgb(121, 3, 3);
+}
+
+.contact {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(18, 17, 17, 0.781);
+    padding: 20px;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(86, 8, 8, 0.604);
+}
+
+.contactpage {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('images/bgcontact.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
